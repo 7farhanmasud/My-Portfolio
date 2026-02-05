@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farhan Masud | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h2 class="logo">Farhan<span>Masud</span></h2>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#prompt">Prompt</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="hire-btn">Hire Me</button>
+
+      <!-- Hire Me Dropdown (hidden by default) -->
+      <div id="hireModal" class="hire-dropdown">
+        <div class="dropdown-content">
+          <div class="dropdown-header">
+            <h3>Hire Me</h3>
+            <span class="close-btn">&times;</span>
+          </div>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero section-view active" id="home">
+    <div class="hero-text">
+      <div class="hero-quals">
+        <span class="qual-item"><i class='bx bxs-graduation'></i> B.Tech CSE</span>
+        <span class="qual-item"><i class='bx bx-code-alt'></i> Fullstack Developer</span>
+        <span class="qual-item"><i class='bx bx-cloud'></i> Cloud & AI</span>
+      </div>
+
+      <h1>
+        Hi, I'm Farhan <br> <span class="highlight-gray">Masud</span>
+      </h1>
+
+      <p class="hero-tagline">
+        I craft <span class="text-white">Fullstack Systems,Modern Web,AI integration,Flutter apps,Google cloud,</span>
+        that scale across web, mobile, cloud & AI platforms.
+      </p>
+
+      <div class="hero-grid">
+        <div class="hero-contact">
+          <h4><i class='bx bx-mobile-alt'></i> Contact</h4>
+          <p>Email: fm4429411@gmail.com</p>
+          <p>Phone: +91 6002550122</p>
+          <p><i class='bx bx-map'></i> Assam, India</p>
+        </div>
+
+        <div class="hero-tech">
+          <h4><i class='bx bx-code'></i> Tech Stack</h4>
+          <div class="tech-badges">
+            <span class="tech-badge"><i class='bx bxl-react'></i> React</span>
+            <span class="tech-badge"><i class='bx bxl-nodejs'></i> Node.js</span>
+            <span class="tech-badge"><i class='bx bxl-google-cloud'></i> GCloud</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class='bx bx-right-arrow-alt'></i> View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+
+        <div class="social-icons">
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero-stats">
+        <div class="stat-box">
+          <h3>8+</h3>
+          <p>Projects</p>
+        </div>
+        <div class="stat-box">
+          <h3>6+</h3>
+          <p>Technologies</p>
+        </div>
+        <div class="stat-box">
+          <h3>3</h3>
+          <p>Articles</p>
+        </div>
+      </div>
+
+      <!-- Tech Stack Grid -->
+      <div class="tech-stack-section">
+        <h3>Technologies I Work With</h3>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <i class='bx bxl-flutter'></i>
+            <span>Flutter</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bxl-react'></i>
+            <span>Next.js</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bxl-nodejs'></i>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bxl-google-cloud'></i>
+            <span>GCloud</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bxl-firebase'></i>
+            <span>Firebase</span>
+          </div>
+          <div class="tech-card">
+            <i class='bx bxl-typescript'></i>
+            <span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Projects (Hero Column) -->
+      <div class="hero-projects-section">
+        <h3>Featured Projects</h3>
+        <div class="hero-projects-grid">
+          <div class="mini-project-card">
+            <h4>Portfolio V1</h4>
+            <p>React, CSS Grid, Netlify</p>
+          </div>
+          <div class="mini-project-card">
+            <h4>E-Commerce App</h4>
+            <p>Flutter, Firebase, Stripe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="./assets/profile.jpg" alt="Farhan Masud" class="profile-img">
+      <div class="floating-icons">
+        <span class="f-icon"><i class='bx bxl-react'></i></span>
+        <span class="f-icon"><i class='bx bxl-nodejs'></i></span>
+        <span class="f-icon"><i class='bx bxl-python'></i></span>
+        <span class="f-icon"><i class='bx bxl-aws'></i></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="section about-section section-view">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm <strong>Farhan Masud</strong>, a BTech CSE (2027) student and passionate fullstack & Flutter developer
+          focused on
+          building reliable, scalable, and user-centered digital products. I enjoy architecting end-to-end
+          solutions—from
+          intuitive interfaces to robust backend systems and cloud infrastructure.
+        </p>
+        <p>
+          My toolset spans Web Development, Flutter, API design, databases, and Microsoft Azure cloud services. I'm also
+          expanding into practical AI integrations that add real value to products.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3><i class='bx bx-code-block'></i> Skills</h3>
+          <ul>
+            <li>Flutter & Cross-Platform App Development</li>
+            <li>Fullstack Engineering (APIs, Databases, Auth, Deployment)</li>
+            <li>Modern Web Development (Next.js, React)</li>
+            <li>Microsoft Azure (App Services, Functions, Storage)</li>
+            <li>AI / ML Integration (practical product-focused use-cases)</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3><i class='bx bx-target-lock'></i> Focus Areas</h3>
+          <ul>
+            <li>Building platforms that solve real regional needs</li>
+            <li>Optimizing performance & DX in multi-module apps</li>
+            <li>Product thinking + clean maintainable architecture</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prompt Section -->
+  <section id="prompt" class="section section-view prompt-section">
+    <div class="prompt-header">
+      <h2>Prompt Library</h2>
+      <p>Copy-paste AI prompts for ChatGPT, Midjourney, Veo 3 & more.</p>
+    </div>
+
+    <div class="prompt-category">
+      <h3>🔥 Instagram Viral Prompts</h3>
+      <div class="prompt-grid">
+        <!-- Card 1 -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>Truck Accident Scene (Veo 3)</h4>
+            <span class="badge badge-trending">TRENDING</span>
+          </div>
+          <p class="card-desc">📌 Add your reference photo and paste this prompt in Veo 3</p>
+          <div class="code-block">
+            <pre>Nighttime cinematic scene filmed from a fixed extreme low-angle SIDE VIEW camera placed directly on an Indian asphalt road.
+
+The camera is positioned perpendicular to the road, capturing only left-to-right movement. Strictly side profile view only. No front-facing or head-on shots.</pre>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>Dramatic Transformation Reel</h4>
+          </div>
+          <p class="card-desc">📌 Use with any before/after concept</p>
+          <div class="code-block">
+            <pre>Create a viral Instagram reel transition:
+
+SCENE 1 (0-2 sec): Subject in casual/messy state, looking at camera with "watch this" expression. Dim lighting, raw footage feel.</pre>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>POV Storytelling Hook</h4>
+          </div>
+          <p class="card-desc">📌 Great for engagement reels</p>
+          <div class="code-block">
+            <pre>POV: [Insert relatable scenario]
+
+Camera angle: First-person perspective, slightly shaky for authenticity
+Lighting: Natural/ambient
+Duration: 7-15 seconds</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-category" style="margin-top: 50px;">
+      <h3>🎨 Image Generation Prompts</h3>
+      <div class="prompt-grid">
+        <!-- Professional Headshot -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>Professional Headshot</h4>
+          </div>
+          <p class="card-desc">📌 Works with Midjourney, DALL-E, Stable Diffusion</p>
+          <div class="code-block">
+            <pre>Professional corporate headshot of [describe person], wearing [outfit], soft studio lighting with subtle rim light, neutral gray gradient background, sharp focus on eyes, shallow depth of field, 85mm portrait lens, high-end photography style, 8K resolution, photorealistic</pre>
+          </div>
+        </div>
+
+        <!-- Cinematic Movie Poster -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>Cinematic Movie Poster</h4>
+          </div>
+          <p class="card-desc">📌 Great for social media covers</p>
+          <div class="code-block">
+            <pre>Cinematic movie poster style image of [subject/scene], dramatic lighting with volumetric rays, teal and orange color grading, epic composition, film grain texture, anamorphic lens flare, theatrical atmosphere, 4K, highly detailed, trending on ArtStation</pre>
+          </div>
+        </div>
+
+        <!-- Anime Character Portrait -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>Anime Character Portrait</h4>
+          </div>
+          <p class="card-desc">📌 For anime-style generations</p>
+          <div class="code-block">
+            <pre>Anime portrait of [describe character], [hair color] hair, [eye color] eyes, wearing [outfit], cherry blossom petals floating, soft pastel background, Studio Ghibli inspired, cel shading, detailed linework, vibrant colors, by Makoto Shinkai</pre>
+          </div>
+        </div>
+
+        <!-- Product Photography -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>Product Photography</h4>
+          </div>
+          <p class="card-desc">📌 For e-commerce style shots</p>
+          <div class="code-block">
+            <pre>Professional product photography of [product], floating on white background, soft shadows, studio lighting setup with key light and fill, clean minimalist composition, commercial advertising style, 8K ultra detailed, magazine quality</pre>
+          </div>
+        </div>
+
+        <!-- 3D Cartoon Avatar -->
+        <div class="prompt-card">
+          <div class="card-header">
+            <h4>3D Cartoon Avatar</h4>
+          </div>
+          <p class="card-desc">📌 For Pixar/Disney style avatars</p>
+          <div class="code-block">
+            <pre>3D Pixar style character portrait of [describe person], big expressive eyes, smooth skin, subtle smile, wearing [outfit], soft gradient background, octane render, cinema 4D, highly detailed, cute aesthetic, Disney animation style</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-view contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p class="contact-subtext">Feel free to reach out for collaborations, freelance work, or product ideas.</p>
+
+        <div class="contact-details">
+          <div class="c-item">
+            <h4>Email</h4>
+            <a href="mailto:mahmudulms23@yahoo.com">fm4429411@gmail.com</a>
+          </div>
+          <div class="c-item">
+            <h4>Phone</h4>
+            <p>6002550122</p>
+          </div>
+          <div class="c-item">
+            <h4>Location</h4>
+            <p>Jagrarpar, Dhubri, Assam, IN 783325</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form class="main-contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>NAME</label>
+              <input type="text" placeholder="">
+            </div>
+            <div class="form-group">
+              <label>EMAIL</label>
+              <input type="email" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>MESSAGE</label>
+            <textarea placeholder=""></textarea>
+          </div>
+          <button type="submit" class="contact-send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p></p>
+  </footer>
+
+
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+
+</html>
